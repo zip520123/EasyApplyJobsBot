@@ -177,7 +177,7 @@ class Linkedin:
         jobLocation = ""
 
         try:
-            jobTitle = self.driver.find_element(By.XPATH, "//h1[contains(@class, 'job-title')]").get_attribute("innerHTML").strip()
+            jobTitle = self.driver.find_element(By.XPATH, "//h1[contains(@class, 't-24')]").get_attribute("innerHTML").strip()
             res = [blItem for blItem in config.blackListTitles if (blItem.lower() in jobTitle.lower())]
             if (len(res) > 0):
                 jobTitle += "(blacklisted title: " + ' '.join(res) + ")"
