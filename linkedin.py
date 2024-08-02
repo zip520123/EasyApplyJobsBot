@@ -1,4 +1,7 @@
 import time,math,random,os
+
+import selenium.common.exceptions
+
 import utils,constants,config
 import pickle, hashlib
 
@@ -252,7 +255,12 @@ class Linkedin:
             utils.prRed("❌ Error in DisplayWriteResults: " +str(e))
 
     def element_exists(self, parent, by, selector):
-        return len(parent.find_elements(by, selector)) > 0
+        for _ in range(5):  # 最多重試5次
+            try:
+                return len(parent.find_elements(by, selector)) > 0
+            except selenium.common.exceptions.StaleElementReferenceException:
+                time.sleep(1)
+                pass
 
 start = time.time()
 Linkedin().linkJobApply()
