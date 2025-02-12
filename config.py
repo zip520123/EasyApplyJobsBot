@@ -18,7 +18,13 @@ chromeProfilePath = r""
 # These settings are for running Linkedin job apply bot.
 # location you want to search the jobs - ex : ["Poland", "Singapore", "New York City Metropolitan Area", "Monroe County"]
 # continent locations:["Europe", "Asia", "Australia", "NorthAmerica", "SouthAmerica", "Africa", "Australia"]
-location = ["NorthAmerica"]
+location = [
+    "London",
+    # "Berlin",
+    # "Amsterdam",
+    # "Dublin",
+    # "Europe"
+]
 # keywords related with your job search
 keywords = [
     "python",
@@ -30,7 +36,7 @@ keywords = [
 
 # https://www.linkedin.com/jobs/search/?currentJobId=4124758757&f_AL=true&f_E=3%2C4&f_SB2=44&f_TPR=r2592000&f_WT=3&origin=JOB_SEARCH_PAGE_JOB_FILTER
 #job experience Level - ex:  ["Internship", "Entry level" , "Associate" , "Mid-Senior level" , "Director" , "Executive"]
-experienceLevels = [ "Entry level" ]
+experienceLevels = [ "Entry level", "Associate", "Mid-Senior level"]
 #job posted date - ex: ["Any Time", "Past Month" , "Past Week" , "Past 24 hours"] - select only one
 datePosted = ["Past Week"]
 #job type - ex:  ["Full-time", "Part-time" , "Contract" , "Temporary", "Volunteer", "Intership", "Other"]
