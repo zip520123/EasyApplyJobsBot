@@ -20,23 +20,31 @@ chromeProfilePath = r""
 # continent locations:["Europe", "Asia", "Australia", "NorthAmerica", "SouthAmerica", "Africa", "Australia"]
 location = ["NorthAmerica"]
 # keywords related with your job search
-keywords = ["frontend", "react", "typescript","javascript", "vue", "python", "programming", "blockchain"]
+keywords = [
+    "python",
+    # "backend",
+    # "devops",
+    # "programming",
+    # "software"
+]
+
+# https://www.linkedin.com/jobs/search/?currentJobId=4124758757&f_AL=true&f_E=3%2C4&f_SB2=44&f_TPR=r2592000&f_WT=3&origin=JOB_SEARCH_PAGE_JOB_FILTER
 #job experience Level - ex:  ["Internship", "Entry level" , "Associate" , "Mid-Senior level" , "Director" , "Executive"]
 experienceLevels = [ "Entry level" ]
 #job posted date - ex: ["Any Time", "Past Month" , "Past Week" , "Past 24 hours"] - select only one
 datePosted = ["Past Week"]
 #job type - ex:  ["Full-time", "Part-time" , "Contract" , "Temporary", "Volunteer", "Intership", "Other"]
-jobType = ["Full-time", "Part-time" , "Contract"]
+jobType = ["Full-time"]
 #remote  - ex: ["On-site" , "Remote" , "Hybrid"]
-remote = ["On-site" , "Remote" , "Hybrid"]
+remote = ["On-site", "Hybrid"]
 #salary - ex:["$40,000+", "$60,000+", "$80,000+", "$100,000+", "$120,000+", "$140,000+", "$160,000+", "$180,000+", "$200,000+" ] - select only one
-salary = [ "$80,000+"]
+salary = [ "$50,000+"]
 #sort - ex:["Recent"] or ["Relevent"] - select only one
-sort = ["Recent"]
+sort = ["Relevent"]
 #Blacklist companies you dont want to apply - ex: ["Apple","Google"]
-blacklistCompanies = []
+blacklistCompanies = ["Soundmouse", "Orfium", "Octopus"]
 #Blaclist keywords in title - ex:["manager", ".Net"]
-blackListTitles = []
+blackListTitles = ["Systems","Quantitative", "Graduate", "HFT", "SQL", "Embedded", "Embedding", "Elixir", "LLM", "Rust", "Test", "Blockchain", "Ruby on Rails", "Android", "iOS", "PHP", "Manager", "Vue", "Ruby", "frontend", "front-end", "full stack", ".Net", "Infrastructure", "C++", "C#", "JavaScript", "Java", "Typescript", "Data", "Platform", "Founding", "Reliability", "Staff", "Lead", "Scala", "Node.js", "Risk", "Catastrophe", "Analyst", "Security", "Administrator", "Principal", "Recat"]
 #Follow companies after sucessfull application True - yes, False - no
 followCompanies = False
 #Below settings are for linkedin bot Pro, you can purchase monthly or yearly subscription to use them from me.
@@ -122,4 +130,4 @@ HowDidYouHeard = "" #OPTIONAL
 ConsiderMeForFutureOffers = True #true = yes, false = no
 
  # Testing & Debugging features
-displayWarnings = False
+displayWarnings = True
