@@ -38,7 +38,7 @@ keywords = [
 #job experience Level - ex:  ["Internship", "Entry level" , "Associate" , "Mid-Senior level" , "Director" , "Executive"]
 experienceLevels = [ "Entry level", "Associate", "Mid-Senior level"]
 #job posted date - ex: ["Any Time", "Past Month" , "Past Week" , "Past 24 hours"] - select only one
-datePosted = ["Past Week"]
+datePosted = ["Past 24 hours"]
 #job type - ex:  ["Full-time", "Part-time" , "Contract" , "Temporary", "Volunteer", "Intership", "Other"]
 jobType = ["Full-time"]
 #remote  - ex: ["On-site" , "Remote" , "Hybrid"]
@@ -48,9 +48,9 @@ salary = [ "$50,000+"]
 #sort - ex:["Recent"] or ["Relevent"] - select only one
 sort = ["Relevent"]
 #Blacklist companies you dont want to apply - ex: ["Apple","Google"]
-blacklistCompanies = ["Soundmouse", "Orfium", "Octopus"]
+blacklistCompanies = ["Harrington Starr","Apleona Combined Technical Solutions", "Soundmouse", "Orfium", "Octopus"]
 #Blaclist keywords in title - ex:["manager", ".Net"]
-blackListTitles = ["Systems","Quantitative", "Graduate", "HFT", "SQL", "Embedded", "Embedding", "Elixir", "LLM", "Rust", "Test", "Blockchain", "Ruby on Rails", "Android", "iOS", "PHP", "Manager", "Vue", "Ruby", "frontend", "front-end", "full stack", ".Net", "Infrastructure", "C++", "C#", "JavaScript", "Java", "Typescript", "Data", "Platform", "Founding", "Reliability", "Staff", "Lead", "Scala", "Node.js", "Risk", "Catastrophe", "Analyst", "Security", "Administrator", "Principal", "Recat"]
+blackListTitles = ["Technician","Salesforce","Governance","Fire","CUDA", "Cheminformatician","Fullstack","KDB", "Junior", "UIUX", "Quant","Shift", "Continental", "mechanical", "Systems","Quantitative", "Graduate", "HFT", "SQL", "Embedded", "Embedding", "Elixir", "LLM", "Rust", "Test", "Blockchain", "Ruby on Rails", "Android", "iOS", "PHP", "Manager", "Vue", "Ruby", "frontend", "front-end", "full stack", ".Net", "Infrastructure", "C++", "C#", "JavaScript", "Java", "Typescript", "Data", "Platform", "Founding", "Reliability", "Staff", "Lead", "Scala", "Node.js", "Risk", "Catastrophe", "Analyst", "Security", "Administrator", "Principal", "Recat"]
 #Follow companies after sucessfull application True - yes, False - no
 followCompanies = False
 #Below settings are for linkedin bot Pro, you can purchase monthly or yearly subscription to use them from me.
