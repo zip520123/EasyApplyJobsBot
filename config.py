@@ -1,11 +1,15 @@
+import os
+
+import dotenv
+dotenv.load_dotenv()
 # General bot settings to use Pro settings you need to download Pro version from: www.automated-bots.com
 
 #PRO FEATURE - browser you want the bot to run ex: ["Chrome"] or ["Firefox"]. Firefox is only supported in Pro feature
 browser = ["Chrome"]
 # Enter your Linkedin password and username below. Do not commit this file after entering these credentials.
 # Linkedin credentials
-email = "YourLinkedin@UserEmail.com"
-password = "YourLinkedinPassword"
+email = os.getenv("email")
+password = os.getenv("password")
 
 #PRO FEATURE - Optional! run browser in headless mode, no browser screen will be shown it will work in background.
 headless = False
