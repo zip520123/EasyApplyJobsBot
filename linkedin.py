@@ -89,6 +89,7 @@ class Linkedin:
             lineToWrite = "\n Category: " + urlWords[0] + ", Location: " +urlWords[1] + ", Applying " +str(totalJobs)+ " jobs."
             self.displayWriteResults(lineToWrite)
 
+            processed = set()
             for page in range(totalPages):
                 currentPageJobs = constants.jobsPerPage * page
                 url = url +"&start="+ str(currentPageJobs)
