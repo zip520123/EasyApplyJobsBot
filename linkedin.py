@@ -94,7 +94,7 @@ class Linkedin:
                 currentPageJobs = constants.jobsPerPage * page
                 url = url +"&start="+ str(currentPageJobs)
                 self.driver.get(url)
-                time.sleep(random.uniform(1, constants.botSpeed))
+                time.sleep(random.uniform(3, constants.botSpeed))
 
                 offersPerPage = self.driver.find_elements(By.XPATH, '//li[@data-occludable-job-id]')
                 # /html/body/div[6]/div[3]/div[2]/div/div/main/div[2]/div[1]/div/div[4]/div/div/p
@@ -155,7 +155,8 @@ class Linkedin:
                                 
                                 except Exception as e:
                                     self.chooseResume()
-                                    lineToWrite = jobProperties + " | " + "* 🥵 Cannot apply to this Job! " +str(offerPage) + f" | {e}"
+                                    lineToWrite = jobProperties + " | " + "* 🥵 Cannot apply to this Job! " + str(offerPage)
+                                    # lineToWrite = jobProperties + " | " + "* 🥵 Cannot apply to this Job! " +str(offerPage) + f" | {e}"
                                     self.displayWriteResults(lineToWrite)
                         else:
                             lineToWrite = jobProperties + " | " + "* 🥳 Already applied! Job: " +str(offerPage)
