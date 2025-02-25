@@ -37,13 +37,25 @@ if USE_LOCAL:
     # device 參數在 pipeline 中：若使用 CPU，設為 -1；否則設為裝置索引（這裡假設 index 0）
     device_idx = 0 if device != "cpu" else -1
 
-    local_pipeline = pipeline(
-        "text-generation",
-        model="distilgpt2",
-        tokenizer="distilgpt2",
-        max_new_tokens=256,
-        device=device_idx,
-        truncation=True
+    # local_pipeline = pipeline(
+    #     "text-generation",
+    #     model="distilgpt2",
+    #     tokenizer="distilgpt2",
+    #     max_new_tokens=128,
+    #     device=device_idx,
+    #     truncation=True
+    # )
+    # llm_instance = HuggingFacePipeline(pipeline=local_pipeline)
+    model_id = os.getenv("BEDROCK_MODEL_ID", "mistral.mistral-7b-instruct-v0:2")  # 替換成你的 Bedrock 模型 ID
+    region = os.getenv("AWS_REGION", "eu-west-2")  # 替換成你使用的 AWS 區域
+    from langchain_aws.llms.bedrock import BedrockLLM
+    # 初始化 BedrockLLM 實例，這個類別會封裝對 AWS Bedrock 的 API 調用
+    llm_instance = BedrockLLM(
+        model_id=model_id,
+        region_name=region,
+        credentials_profile_name= os.getenv("profile_name"),
+        max_tokens=128,      # 最大生成 token 數量
+        temperature=0.7,     # 控制生成隨機性的溫度參數
     )
     llm_instance = HuggingFacePipeline(pipeline=local_pipeline)
 
