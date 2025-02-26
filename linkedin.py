@@ -97,16 +97,11 @@ class Linkedin:
                 time.sleep(random.uniform(3, constants.botSpeed))
 
                 offersPerPage = self.driver.find_elements(By.XPATH, '//li[@data-occludable-job-id]')
-                # /html/body/div[6]/div[3]/div[2]/div/div/main/div[2]/div[1]/div/div[4]/div/div/p
-                # offerIds = [(offer.get_attribute(
-                #     "data-occludable-job-id").split(":")[-1]) for offer in offersPerPage]
                 offerIds = []
                 time.sleep(random.uniform(1, constants.botSpeed))
 
                 for offer in offersPerPage:
-                    # /html/body/div[6]/div[3]/div[4]/div/div/main/div/div[2]/div[1]/div/ul/li[4]/div/div/div[1]/ul/li
                     if not self.element_exists(offer, By.XPATH, ".//li[contains(., 'Applied')]"):
-                    # if not self.element_exists(offer, By.XPATH, ".//*[contains(text(), 'Applied')]"):
                         offerId = offer.get_attribute("data-occludable-job-id")
                         # offerId = offer.get_attribute("data-job-id")
                         if offerId not in processed:
