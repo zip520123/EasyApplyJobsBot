@@ -1,11 +1,14 @@
 #PRO FEATURE - Auto answer additional questions from the below values.
 inputField:
+  Application Support: 0
   First Name: Ping-Yen
   Last Name: Chen
   Phone Country Code: United Kingdom (+44) # See linkedin for your country code, must be exact
   Phone Number: 7442432256
   Street address: 19 Sails Court, 15 Newport Ave
+  # Location (city)Location (city)
   City: London
+  Location: London
   State: London
   Zip: E14 2AD
   Linkedin: https://www.linkedin.com/in/elvin-pingyen-chen/
@@ -26,7 +29,7 @@ inputField:
   General Business: 0
   Health Care Provider: 3
   Human Resources: 0
-  Information Technology: 0
+  Information Technology: 5
   Legal: 0
   Management: 0
   Manufacturing: 0
@@ -44,9 +47,8 @@ inputField:
   Supply Chain: 0
   Training: 0
   Writing/Editing: 0
-  # default to put for any skill that you did not list
-  Years of experience: 0
   C++: 0
+  Windows: 0
   Python: 5
   Javascript: 2
   Node: 2
@@ -75,8 +77,12 @@ inputField:
   Cross-functional team: 3
   Social media platforms: 0
   Microsoft Azure: 0
+  # How many years of work experience do you have with Amazon Web Services (AWS)?
   AWS: 5
   .NET: 0
+  # How many years of work experience do you have with Infrastructure as code (IaC)?
+  Infrastructure as code: 3
+  IaC: 3
   # add custom one here
   universityGpa: 4.0
   # What is your level of proficiency in a: polski? Required
@@ -128,6 +134,7 @@ inputField:
   # how many years of work experience do you have with apache?
   Apache: 0
   # how many years of work experience do you have with puppeteering?
+  Puppet: 0
   puppeteering: 0
   # how many years of work experience do you have with scorm?
   scorm: 0
@@ -352,6 +359,9 @@ inputField:
   # substrate experience
   # how many years of work experience do you have with cryptocurrency?
   System Architecture: 1
+  # default to put for any skill that you did not list
+  Years of experience: 0
+  Years of work experience: 0
 radio:
   # Do you have a valid driver's license? (yes/no checkbox)
   Driver: "yes"
