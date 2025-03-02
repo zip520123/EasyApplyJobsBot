@@ -254,6 +254,30 @@ class Linkedin:
         result = ""
         for pages in range(applyPages):  
             self.driver.find_element(By.CSS_SELECTOR, "button[aria-label='Continue to next step']").click()
+        # input fields
+        div_questions = self.driver.find_elements(By.XPATH, "//div[@class='artdeco-text-input--container ember-view']")
+        if div_questions:
+            for d in div_questions:
+                q = d.find_element(By.XPATH, ".//label").text
+                for k, v in self.answers['inputField'].items():
+                    if k in q:
+                        input_ = d.find_element(By.XPATH, ".//input")
+                        input_.send_keys(v)
+                        print(f"✅ 填入 {v}: {q}")
+        # fieldset
+        # $x("//fieldset//span[@aria-hidden='true']")
+        fieldsets = self.driver.find_elements(By.XPATH, "//fieldset")
+        if fieldsets:
+            for f in fieldsets:
+                q = f.find_element(By.XPATH, ".//span[@aria-hidden='true']").text
+                for k, v in self.answers['radio'].items():
+                    if k in q:
+                        radios = f.find_elements(By.XPATH, ".//input[@type='radio']")
+                        for r in radios:
+                            if r.get_attribute("value").lower() == v.lower():
+                                r.click()
+                                print(f"✅ Radio 選擇 {v}: {q}")
+        # dropdown
 
         self.driver.find_element( By.CSS_SELECTOR, "button[aria-label='Review your application']").click()
         time.sleep(random.uniform(1, constants.botSpeed))
