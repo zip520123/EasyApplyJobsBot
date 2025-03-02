@@ -116,7 +116,10 @@ class Linkedin:
                     countJobs += 1
 
                     jobProperties = self.getJobProperties(countJobs)
-                    if "blacklisted" in jobProperties: 
+                    if "sponsor" in jobProperties:
+                        lineToWrite = jobProperties + " | " + "* 🤬 Cannot Sponsor Job, skipped!: " +str(offerPage)
+                        self.displayWriteResults(lineToWrite)
+                    elif "blacklisted" in jobProperties:
                         lineToWrite = jobProperties + " | " + "* 🤬 Blacklisted Job, skipped!: " +str(offerPage)
                         self.displayWriteResults(lineToWrite)
                     
@@ -205,6 +208,14 @@ class Linkedin:
                 print(e)
                 utils.prYellow("⚠️ Warning in getting jobDetail: " + str(e)[0:100])
             jobDetail = ""
+
+        try:
+            jobRequirements = self.driver.find_element(By.XPATH, "//ul[contains(@class, 'job-details-about-the-job-module__requirements-list')]//li").text
+            jobReqText = ''.join(jobRequirements)
+            if "sponsorship" in jobReqText:
+                jobDetail += "(cannot sponsor company: " + jobReqText + ")"
+        except Exception as e:
+            pass
 
         try:
             jobWorkStatusSpans = self.driver.find_elements(By.XPATH, "//span[contains(@class,'ui-label ui-label--accent-3 text-body-small')]//span[contains(@aria-hidden,'true')]")
