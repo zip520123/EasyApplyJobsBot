@@ -207,7 +207,9 @@ class Linkedin:
 
         try:
             time.sleep(5)
-            jobDetail = self.driver.find_element(By.XPATH, "//div[@class='job-details-jobs-unified-top-card__company-name']/a").text
+            jobDetail = self.driver.find_element(By.XPATH, "//div[@class='job-details-jobs-unified-top-card__company-name']")
+            jobDetail = jobDetail.find_element(By.XPATH, ".//a").text \
+                if len(jobDetail.find_elements(By.XPATH, ".//a")) else jobDetail.text
             jobDetail = ''.join(jobDetail)
             if jobDetail in config.blacklistCompanies:
                 jobDetail += "(blacklisted company: " + jobDetail + ")"
