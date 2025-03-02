@@ -173,6 +173,8 @@ class LinkedinUrlGenerate:
                 datePosted = "&f_TPR=r604800&"
             case "Past 24 hours":
                 datePosted = "&f_TPR=r86400&"
+            case _:
+                datePosted = f"&f_TPR=r{config.datePosted[0]}&"
         return datePosted
 
     def jobType(self):
