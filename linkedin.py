@@ -261,11 +261,14 @@ class Linkedin:
         if div_questions:
             for d in div_questions:
                 q = d.find_element(By.XPATH, ".//label").text
+                print(f"q: {q}")
                 for k, v in self.answers['inputField'].items():
                     if k in q:
                         input_ = d.find_element(By.XPATH, ".//input")
+                        input_.clear()
                         input_.send_keys(v)
                         print(f"✅ 填入 {v}: {q}")
+                        break
         # fieldset
         # $x("//fieldset//span[@aria-hidden='true']")
         fieldsets = self.driver.find_elements(By.XPATH, "//fieldset")
