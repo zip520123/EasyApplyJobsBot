@@ -11,6 +11,13 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 
+import yaml
+
+def load_additional_questions(filepath="AdditionalQuestions.yaml"):
+    with open(filepath, "r", encoding="utf-8") as file:
+        data = yaml.safe_load(file)
+    return data
+
 class Linkedin:
     def __init__(self):
             utils.prYellow("🤖 Thanks for using Easy Apply Jobs bot, for more information you can visit our site - www.automated-bots.com")
@@ -19,6 +26,7 @@ class Linkedin:
             self.cookies_path = f"{os.path.join(os.getcwd(),'cookies')}/{self.getHash(config.email)}.pkl"
             self.driver.get('https://www.linkedin.com')
             self.loadCookies()
+            self.answers = load_additional_questions()
 
             if not self.isLoggedIn():
                 self.driver.get("https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin")
