@@ -275,14 +275,16 @@ class Linkedin:
         if fieldsets:
             for f in fieldsets:
                 q = f.find_element(By.XPATH, ".//span[@aria-hidden='true']").text
+                print(f"q: {q}")
                 for k, v in self.answers['radio'].items():
                     if k in q:
-                        radios = f.find_elements(By.XPATH, ".//input[@type='radio']")
+                        radios = f.find_elements(By.XPATH, ".//label")
                         for r in radios:
-                            if r.get_attribute("value").lower() == v.lower():
+                            if r.get_attribute("data-test-text-selectable-option__label").lower() == v.lower():
                                 r.click()
                                 print(f"✅ Radio 選擇 {v}: {q}")
-        # dropdown
+                                break
+        # todo dropdown https://www.linkedin.com/jobs/view/4171924531/
 
         self.driver.find_element( By.CSS_SELECTOR, "button[aria-label='Review your application']").click()
         time.sleep(random.uniform(1, constants.botSpeed))
