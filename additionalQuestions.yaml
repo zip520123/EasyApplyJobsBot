@@ -6,9 +6,9 @@ inputField:
   Phone Country Code: United Kingdom (+44) # See linkedin for your country code, must be exact
   Phone Number: 7442432256
   Street address: 19 Sails Court, 15 Newport Ave
-  # Location (city)Location (city)
+  # Location (city)
+  Location: Greater London, England, United Kingdom
   City: London
-  Location: London
   State: London
   Zip: E14 2AD
   Linkedin: https://www.linkedin.com/in/elvin-pingyen-chen/
@@ -83,6 +83,8 @@ inputField:
   # How many years of work experience do you have with Infrastructure as code (IaC)?
   Infrastructure as code: 3
   IaC: 3
+  # How many years of work experience do you have with Artificial Intelligence (AI)?
+  Artificial Intelligence: 2
   # add custom one here
   universityGpa: 4.0
   # What is your level of proficiency in a: polski? Required
@@ -360,13 +362,19 @@ inputField:
   # how many years of work experience do you have with cryptocurrency?
   System Architecture: 1
   # default to put for any skill that you did not list
+  PLM: 0
   Years of experience: 0
   Years of work experience: 0
+  # How many years of Capital Markets experience do you currently have?
+  Capital Markets: 0
 radio:
   # Do you have a valid driver's license? (yes/no checkbox)
   Driver: "yes"
   # Will you now, or in the future, require sponsorship for employment visa status (e.g. H-1B visa status)? (yes/no checkbox)
   Sponsor: "yes"
+  sponsorship: "yes"
+  on-call: "no"
+  # Will you now or in the future require sponsorship for employment visa status?
   # Are you legally authorized to work in COUNTRY? (yes/no checkbox)
   Legally authorized: "yes"
   # We must fill this position urgently. Can you start immediately? (yes/no checkbox)
