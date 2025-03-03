@@ -249,8 +249,8 @@ class Linkedin:
             jobRequirements = self.driver.find_elements(By.XPATH, "//ul[contains(@class, 'job-details-about-the-job-module__requirements-list')]//li")
             if jobRequirements:
                 for r in jobRequirements:
-                    jobReqText = ''.join(r.text)
-                    not_matches.extend([k for k, v in self.answers['requirements'].items() if k in jobReqText and v == "no"])
+                    jobReqText = ''.join(r.text).lower()
+                    not_matches.extend([k for k, v in self.answers['requirements'].items() if k.lower() in jobReqText and v == "no"])
                 if not_matches:
                     resp = ', '.join(not_matches)
         except Exception as e:
