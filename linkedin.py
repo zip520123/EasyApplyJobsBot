@@ -124,8 +124,9 @@ class Linkedin:
                     countJobs += 1
 
                     jobProperties = self.getJobProperties(countJobs)
-                    if "sponsor" in jobProperties:
-                        lineToWrite = jobProperties + " | " + "* 🤬 Cannot Sponsor Job, skipped!: " +str(offerPage)
+                    jobRequirements = self.getJobRequirements()
+                    if jobRequirements:
+                        lineToWrite = jobProperties + " | " + f"* 🤬 Requirements not match Job({jobRequirements}), skipped!: " +str(offerPage)
                         self.displayWriteResults(lineToWrite)
                     elif "blacklisted" in jobProperties:
                         lineToWrite = jobProperties + " | " + "* 🤬 Blacklisted Job, skipped!: " +str(offerPage)
@@ -240,6 +241,22 @@ class Linkedin:
 
         textToWrite = str(count) + " | " + jobTitle +" | " + jobDetail + jobLocation
         return textToWrite
+
+    def getJobRequirements(self):
+        resp = ""
+        not_matches = []
+        try:
+            jobRequirements = self.driver.find_elements(By.XPATH, "//ul[contains(@class, 'job-details-about-the-job-module__requirements-list')]//li")
+            if jobRequirements:
+                for r in jobRequirements:
+                    jobReqText = ''.join(r.text)
+                    not_matches.extend([k for k, v in self.answers['requirements'].items() if k in jobReqText and v == "no"])
+                if not_matches:
+                    resp = ', '.join(not_matches)
+        except Exception as e:
+            print(f"problem while getting job requirements")
+        return resp
+
 
     def easyApplyButton(self):
         try:
