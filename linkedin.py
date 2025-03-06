@@ -320,6 +320,11 @@ class Linkedin:
                     
                     print(f"Dropdown q: {q}")
                     
+                    # Skip language selections and other profile-sensitive dropdowns
+                    if any(keyword in q.lower() for keyword in ['language', 'idioma', 'sprache', 'langue', '语言']):
+                        print(f"⚠️ Skipping language selection dropdown: {q}")
+                        continue
+                    
                     # First check if any option matches our answers
                     select = Select(select_elem)
                     options = [option.text.strip() for option in select.options]
@@ -348,10 +353,15 @@ class Linkedin:
                             if answer_found:
                                 break
                     
-                    # If no match found from answers, select first non-default option if available
+                    # If no match found from answers and it's not a sensitive field, select first non-default option if available
                     if not answer_found and options:
-                        select.select_by_visible_text(options[0])
-                        print(f"✅ Dropdown default 選擇 {options[0]}: {q}")
+                        # Additional safety check for sensitive fields
+                        sensitive_keywords = ['language', 'idioma', 'sprache', 'langue', '语言', 'profile', 'account', 'settings', 'preferences']
+                        if not any(keyword in q.lower() for keyword in sensitive_keywords):
+                            select.select_by_visible_text(options[0])
+                            print(f"✅ Dropdown default 選擇 {options[0]}: {q}")
+                        else:
+                            print(f"⚠️ Skipping sensitive dropdown without match: {q}")
                 
                 except Exception as e:
                     if config.displayWarnings:
