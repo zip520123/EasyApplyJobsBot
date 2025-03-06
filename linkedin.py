@@ -7,6 +7,7 @@ import pickle, hashlib
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -301,7 +302,61 @@ class Linkedin:
                                 r.click()
                                 print(f"✅ Radio 選擇 {v}: {q}")
                                 break
-        # todo dropdown https://www.linkedin.com/jobs/view/4171924531/
+        # Handle dropdown/select elements
+        selects = self.driver.find_elements(By.XPATH, "//select[contains(@data-test-text-entity-list-form-select,'')]")
+        if selects:
+            for select_elem in selects:
+                try:
+                    # Get the question text from the parent div's label or the select's aria-describedby
+                    try:
+                        q = select_elem.find_element(By.XPATH, "./ancestor::div[contains(@class, 'fb-dropdown')]//label").text
+                    except:
+                        # If no label found, try to get the question from aria-describedby
+                        error_id = select_elem.get_attribute('aria-describedby')
+                        if error_id:
+                            q = error_id.replace('-error', '').split('-')[-1]  # Extract the question from the ID
+                        else:
+                            q = select_elem.get_attribute('id').split('-')[-1]  # Fallback to ID
+                    
+                    print(f"Dropdown q: {q}")
+                    
+                    # First check if any option matches our answers
+                    select = Select(select_elem)
+                    options = [option.text.strip() for option in select.options]
+                    
+                    # Skip the default "Select an option" if it exists
+                    if "Select an option" in options:
+                        options.remove("Select an option")
+                    
+                    # Try to find matching answer from our config
+                    answer_found = False
+                    for k, v in self.answers['dropdown'].items():
+                        if k.lower() in q.lower():
+                            # Try to find exact match first
+                            if v in options:
+                                select.select_by_visible_text(v)
+                                print(f"✅ Dropdown exact match 選擇 {v}: {q}")
+                                answer_found = True
+                                break
+                            # Try partial match
+                            for option in options:
+                                if v.lower() in option.lower():
+                                    select.select_by_visible_text(option)
+                                    print(f"✅ Dropdown partial match 選擇 {option}: {q}")
+                                    answer_found = True
+                                    break
+                            if answer_found:
+                                break
+                    
+                    # If no match found from answers, select first non-default option if available
+                    if not answer_found and options:
+                        select.select_by_visible_text(options[0])
+                        print(f"✅ Dropdown default 選擇 {options[0]}: {q}")
+                
+                except Exception as e:
+                    if config.displayWarnings:
+                        print(f"Warning in handling dropdown: {str(e)}")
+                    continue
 
         self.driver.find_element( By.CSS_SELECTOR, "button[aria-label='Review your application']").click()
         time.sleep(random.uniform(1, constants.botSpeed))
