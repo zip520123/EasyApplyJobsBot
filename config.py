@@ -31,6 +31,8 @@ location = [
 ]
 # keywords related with your job search
 keywords = [
+    "iOS",
+    "Swift",
     "python",
     # "backend",
     # "devops",
@@ -40,15 +42,15 @@ keywords = [
 
 # https://www.linkedin.com/jobs/search/?currentJobId=4124758757&f_AL=true&f_E=3%2C4&f_SB2=44&f_TPR=r2592000&f_WT=3&origin=JOB_SEARCH_PAGE_JOB_FILTER
 #job experience Level - ex:  ["Internship", "Entry level" , "Associate" , "Mid-Senior level" , "Director" , "Executive"]
-experienceLevels = [ "Entry level", "Associate", "Mid-Senior level"]
+experienceLevels = [ "Mid-Senior level", "Senior level"]
 #job posted date - ex: ["Any Time", "Past Month" , "Past Week" , "Past 24 hours"] - select only one
 # datePosted = ["Past Week"]
 # datePosted = ["Past 24 hours"]
-datePosted = [86400*3]
+datePosted = ["Past 24 hours"]
 #job type - ex:  ["Full-time", "Part-time" , "Contract" , "Temporary", "Volunteer", "Intership", "Other"]
 jobType = ["Full-time"]
 #remote  - ex: ["On-site" , "Remote" , "Hybrid"]
-remote = ["On-site", "Hybrid"]
+remote = ["On-site", "Hybrid", "Remote"]
 #salary - ex:["$40,000+", "$60,000+", "$80,000+", "$100,000+", "$120,000+", "$140,000+", "$160,000+", "$180,000+", "$200,000+" ] - select only one
 salary = [ "$50,000+"]
 #sort - ex:["Recent"] or ["Relevent"] - select only one
@@ -56,19 +58,19 @@ sort = ["Relevent"]
 #Blacklist companies you dont want to apply - ex: ["Apple","Google"]
 blacklistCompanies = ["Kraken", "Harrington Starr","Apleona Combined Technical Solutions", "Soundmouse", "Orfium", "Octopus"]
 #Blaclist keywords in title - ex:["manager", ".Net"]
-blackListTitles = ["Water", "Openlink","High Frequency Trading", "PLM", "Support","Genome","Econometrician","Commissioning","Sprinkler", "Design ","RF ","AV ", "Electrical", "Actuary", "Strategist", "Biologist", "Coffee"," UI","Quality","GCP","typescript","Workplace","HVAC","MDM","cisco","Network","Cost","Fraud","Research","Mobile","Technician","Salesforce","Governance","Fire","CUDA", "Cheminformatician","Fullstack","KDB", "Junior", "UIUX", "Quant","Shift", "Continental", "mechanical","Quantitative", "Graduate", "HFT", "SQL", "Embedded", "Embedding", "Elixir", "LLM", "Rust", "Test", "Blockchain", "Ruby on Rails", "Android", "iOS", "PHP", "Manager", "Vue", "Ruby", "frontend", "front-end", "full stack", ".Net", "Infrastructure", "C++", "C#", "JavaScript", "Java", "Typescript", "Data", "Founding", "Reliability", "Staff", "Lead", "Scala", "Node.js", "Risk", "Catastrophe", "Analyst", "Security", "Administrator", "Principal", "Recat"]
+blackListTitles = ["Ruby", "Lawyer", "Apprenticeship", "Designer"]
 #Follow companies after sucessfull application True - yes, False - no
 followCompanies = False
 #Below settings are for linkedin bot Pro, you can purchase monthly or yearly subscription to use them from me.
-#PRO FEATURE! - If you have multiple CV's you can choose which one you want the bot to use. (1- the first one on the list, 2 - second , etc)
+#If you have multiple CV's you can choose which one you want the bot to use. (1- the first one on the list, 2 - second , etc)
 preferredCv = 1
 #PRO FEAUTRE! - Output unaswered questions into a seperate text file, will output radio box, dropdown and input field questions into seperate .yaml file
 outputSkippedQuestions = True
-#PRO FEATURE! - Use AI to fill and answer skipped questions. Will cost 5 credits per answer cause of computational power.
-useAiAutocomplete = False
-#PRO FEATURE! - Only Apply these companies -  ex: ["Apple","Google"] -  leave empty for all companies 
+#Use AI to fill and answer skipped questions. Will cost 5 credits per answer cause of computational power.
+useAiAutocomplete = True
+#Only Apply these companies -  ex: ["Apple","Google"] -  leave empty for all companies 
 onlyApplyCompanies = []
-#PRO FEATURE! - Only Apply titles having these keywords -  ex:["web", "remote"] - leave empty for all companies 
+#Only Apply titles having these keywords -  ex:["web", "remote"] - leave empty for all companies 
 onlyApplyTitles = [] 
 #PRO FEATURE! - Dont apply the job posted by the Hiring member contains this in his/her name - ex: ["adam","Sarah"]
 blockHiringMember = [] 

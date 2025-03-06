@@ -1,17 +1,18 @@
 #PRO FEATURE - Auto answer additional questions from the below values.
 inputField:
   Application Support: 0
-  First Name: Ping-Yen
-  Last Name: Chen
+  First Name: Hsiang-Lin
+  Last Name: Tsai
   Phone Country Code: United Kingdom (+44) # See linkedin for your country code, must be exact
-  Phone Number: 7442432256
-  Street address: 19 Sails Court, 15 Newport Ave
+  Phone Number: 7741342154
+  Street address: 11 Briary Cl
+  address: 11 Briary Cl
   # Location (city)
   Location: Greater London, England, United Kingdom
   City: London
   State: London
-  Zip: E14 2AD
-  Linkedin: https://www.linkedin.com/in/elvin-pingyen-chen/
+  Zip: NW3 3JZ
+  Linkedin: https://www.linkedin.com/in/zip520123/
   #  Website: https://www.ongundemirag.com/ # github/website is interchangable here
   # Questions having these technology keywords inside (whole numbers only) - case insensitive
   Accounting/Auditing: 0
@@ -27,7 +28,7 @@ inputField:
   Engineering: 5
   Finance: 0
   General Business: 0
-  Health Care Provider: 3
+  Health Care Provider: 0
   Human Resources: 0
   Information Technology: 5
   Legal: 0
@@ -58,7 +59,11 @@ inputField:
   PHP: 0
   Laravel: 0
   SASS: 0
-  React: 0
+  React: 2
+  swift: 8
+  Swift: 8
+  Test Development: 5
+  Testing: 5
   React Native: 0
   Django: 1
   SAP: 0
@@ -86,6 +91,7 @@ inputField:
   # How many years of work experience do you have with Artificial Intelligence (AI)?
   Artificial Intelligence: 2
   # add custom one here
+  RxSwift: 5
   universityGpa: 4.0
   # What is your level of proficiency in a: polski? Required
   english: Professional # None, Conversational, Professional, Native or bilingual
@@ -101,7 +107,7 @@ inputField:
   # If you selected Word of mouth, Referral or Other from the question above, please specify in the box below.
   Word of mouth, Referral or Other: None
   # College or University
-  College or University: China Medical University
+  College or University: TungHai University
   # Have you ever applied at ... before? Required
   Have you ever applied: "No"
   #  Please provide 3 references with their name, phone number, and email address. Required
@@ -111,7 +117,7 @@ inputField:
   #  What is your desired hourly pay rate (in USD)? Required
   Hourly pay rate: 30
   #  Notice period in weeks Required
-  Notice period: 4 weeks
+  Notice period: immediately
   #  Please evaluate on a scale from 1 to 10 you ability to manage technical issues on different social media platforms? Required
   # Manage Technical Issues: 8
   # What are your salary requirements in gross monthly PLN?
@@ -162,11 +168,11 @@ inputField:
   # ¿cuántos años de experiencia tienes con interfaces?
   interfaces: 0
   # how many years of work experience do you have with golang?
-  Golang: 2
+  Golang: 0
   # how many years of work experience do you have with kafka ?
-  kafka: 2
+  kafka: 0
   # how many years of work experience do you have with docker?
-  Docker: 5
+  Docker: 0
   # how many years of work experience do you have with ci/cd ?
   ci/cd: 4
   # quanti anni di esperienza di lavoro hai con supporto tecnico?
@@ -180,11 +186,11 @@ inputField:
   # wie viele jahre erfahrung haben sie mit: cybersecurity?
   cybersecurity: 2
   # how many years of work experience do you have with saas development?
-  saas: 5
+  saas: 0
   # how many years of work experience do you have with akka?
   akka: 0
   # combien de langages de programmation maitrisez vous ?
-  langages de programmation maitrisez vous: 5
+  langages de programmation maitrisez vous: 0
   # combien d'années d'expérience justifiez vous dans le développement informatique ?
   développement informatique: 5
   # ¿cuántos años de experiencia tienes con zoho?
@@ -229,7 +235,7 @@ inputField:
   experience working for a product company: Yes
   # how many years of work experience do you have with skill development?
   Skill development: 0
-  # quanti anni di esperienza di lavoro hai con l’uso di visual studio?
+  # quanti anni di esperienza di lavoro hai con l'uso di visual studio?
   visual studio: 0
   # how many years of work experience do you have with spring?
   Spring: 0
@@ -310,7 +316,7 @@ inputField:
   # how many years of work experience do you have with codesys?
   # how many years of work experience do you have with embedded systems?
   # how many years of work experience do you have with woocommerce?
-  # combien d’années d’expérience avez-vous en tant que développeur web ?
+  # combien d'années d'expérience avez-vous en tant que développeur web ?
   # wie viele jahre erfahrung haben sie mit: machine vision?
   # wie viele jahre erfahrung haben sie mit: firstspirit?
   # años de experiencia en non-relational databases:
@@ -367,6 +373,7 @@ inputField:
   Years of work experience: 0
   # How many years of Capital Markets experience do you currently have?
   Capital Markets: 0
+  UK address history: 5
 radio:
   # Do you have a valid driver's license? (yes/no checkbox)
   Driver: "yes"
@@ -385,7 +392,7 @@ radio:
   High School Diploma: "yes"
   Bachelor's Degree: "yes"
   Associate's Degree: "no"
-  Master's Degree: "no"
+  Master's Degree: "yes"
   Master of Business Administration: "no"
   Doctor of Philosophy: "no"
   Doctor of Medicine: "no"
@@ -461,8 +468,8 @@ radio:
   jenkins: "yes"
   # czy zgadzasz się na dojazd do pracy w tej lokalizacji  Options : [tak,nie]
   # ¿tienes permiso de trabajo para españa? Options : [sí,no]
-  # avez-vous besoin, ou aurez-vous besoin plus tard, d’un parrainage d’immigration pour obtenir une autorisation de travail ? Options : [oui,non]
-  # by submitting this form i confirm that i have read and understood manta’s privacy notice on processing of my personal data.  Options : [yes]
+  # avez-vous besoin, ou aurez-vous besoin plus tard, d'un parrainage d'immigration pour obtenir une autorisation de travail ? Options : [oui,non]
+  # by submitting this form i confirm that i have read and understood manta's privacy notice on processing of my personal data.  Options : [yes]
   # the contractor shall have a nato secret security clearance. Options : [yes,no]
   # the candidate has relevant and recent experience in software development using java and typescript (angular). Options : [yes,no]
   # the candidate has and recent experience in programming at the computer network level. Options : [yes,no]
@@ -477,7 +484,7 @@ radio:
   # i have read the privacy notice, and understand that providing this information is voluntary and will not affect my application process (required) Options : [yes,no]
   # i identify my ethnicity as (select all that apply): Options : [black (including african-american, african-caribbean, african),hispanic or latinx (including mexican, brazilian, spanish, cuban, dominican, and puerto rican),indigenous (including indigenous people of canada, australia, new zealand, south america),north african (including algerian, egyptian, libyan, moroccan, tunisian),south asian (including bangladeshi, bhutanese, indian, nepali, pakistani, sri lankan),southeast asian (including burmese, cambodian, filipino, hmong, indonesian, laotian, malaysian, mien, singaporean, thai, and vietnamese),west asian (including iranian, iraqi, afghan, cypriots, israeli, turkish, syrian, lebanese, saudi arabian, yemeni),east asian (including chinese, japanese, korean, mongolian, tibetan, and taiwanese),white (including european),prefer not to answer]
   # i identify my sexual orientation as: Options : [straight,gay,lesbian,bisexual,queer,prefer to self-describe in another way,prefer not to answer]
-  # i am neurodiverse (select all that apply): Options : [attention deficit hyperactivity disorder (adhd),autistic spectrum,dyslexia,dyspraxia,social anxiety disorders,sensory processing disorder (spd),prefer not to answer,no, i don’t have a neurodiversity,other]
+  # i am neurodiverse (select all that apply): Options : [attention deficit hyperactivity disorder (adhd),autistic spectrum,dyslexia,dyspraxia,social anxiety disorders,sensory processing disorder (spd),prefer not to answer,no, i don't have a neurodiversity,other]
   # are you located in the united states? Options : [yes,no]
   # are you in the dc metro area? please note this is not a requirement for the job. Options : [yes,no]
   # do you have experience writing custom wordpress plugins? Options : [yes,no]
@@ -509,7 +516,7 @@ dropdown:
   Uk: "Yes"
   # can you be in the brno office 2 times a week?  Options : [Vyberte možnost,Yes,No]
   Brno : "Yes"
-  # qual è il tuo grado di conoscenza della lingua inglese? Options : [Seleziona un’opzione,Nessuno,Parlato,Professionale,Madrelingua o bilingue]
+  # qual è il tuo grado di conoscenza della lingua inglese? Options : [Seleziona un'opzione,Nessuno,Parlato,Professionale,Madrelingua o bilingue]
   # what is your level of proficiency in french? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
   French: "None"
   # do you have a background in engineering (whatever domain) ? Options : [Select an option,Yes,No]
@@ -544,7 +551,7 @@ dropdown:
   Portugal: "No"
   # what is your level of proficiency in angličtina? Options : [Vyberte možnost,None,Conversational,Professional,Native or bilingual]
   angličtina: "Native"
-  # risiedi attualmente in veneto e puoi dimostrarlo? in caso contrario, ti chiediamo la cortesia di non inviare la candidatura. Options : [Seleziona un’opzione,Yes,No]
+  # risiedi attualmente in veneto e puoi dimostrarlo? in caso contrario, ti chiediamo la cortesia di non inviare la candidatura. Options : [Seleziona un'opzione,Yes,No]
   # what is your level of proficiency in lithuanian? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
   lithuanian: "None"
   # uso della lingua italiana parlata e scritta, come madrelingua o c2 equivalente Options : [Select an option,Yes,No]
@@ -561,9 +568,9 @@ dropdown:
   Hungarian: "None"
   # what is your level of proficiency in dutch? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
   dutch: "None"
-  # hai conseguito la laurea in ambito informatico? Options : [Seleziona un’opzione,Sì,No]
+  # hai conseguito la laurea in ambito informatico? Options : [Seleziona un'opzione,Sì,No]
   informatico: "Si"
-  # hai esperienza in ambito programmazione python? Options : [Seleziona un’opzione,Sì,No]
+  # hai esperienza in ambito programmazione python? Options : [Seleziona un'opzione,Sì,No]
   python: "Si"
   # ¿resides a 20 km o menos de mataró? requisito indispensable* Options : [Selecciona una opción,Yes,No]
   mataró: "No"
@@ -583,28 +590,28 @@ dropdown:
   # are you able to work in a location at 2h driving from brussels (belgium) Options : [Select an option,Yes,No]
   # are you a eu citizen? Options : [Select an option,Yes,No]
   # are you a resident of greece? Options : [Select an option,Yes,No]
-  # hai la conoscenza di scripting in shell? Options : [Seleziona un’opzione,Yes,No]
-  # hai conoscenze di networking? Options : [Seleziona un’opzione,Yes,No]
-  # hai una buona conoscenza della lingua inglese? Options : [Seleziona un’opzione,Yes,No]
-  # sei disponibile ad effettuare una modalità ibrida su milano? Options : [Seleziona un’opzione,Yes,No]
+  # hai la conoscenza di scripting in shell? Options : [Seleziona un'opzione,Yes,No]
+  # hai conoscenze di networking? Options : [Seleziona un'opzione,Yes,No]
+  # hai una buona conoscenza della lingua inglese? Options : [Seleziona un'opzione,Yes,No]
+  # sei disponibile ad effettuare una modalità ibrida su milano? Options : [Seleziona un'opzione,Yes,No]
   # what is your level of proficiency in latvian? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
-  # qual è il tuo grado di conoscenza della lingua francese? Options : [Seleziona un’opzione,Nessuno,Parlato,Professionale,Madrelingua o bilingue]
-  # sei legalmente autorizzato/a a lavorare in italia? Options : [Seleziona un’opzione,Yes,No]
+  # qual è il tuo grado di conoscenza della lingua francese? Options : [Seleziona un'opzione,Nessuno,Parlato,Professionale,Madrelingua o bilingue]
+  # sei legalmente autorizzato/a a lavorare in italia? Options : [Seleziona un'opzione,Yes,No]
   # are you aware this role will be onsite in valencia, spain? Options : [Select an option,Yes,No]
   # hoe vaardig bent u in het nederlands? Options : [Selecteer een optie,Niet,Conversatie,Beroepsmatig,Moedertaal of tweetalig]
   # job offers communication Options : [Select an option,Yes,No]
   # aurez-vous une convention de stage pour les dates mentionnées précédemment ?  Options : [Select an option,Yes,No]
-  # hai esperienza di 1/2 anni in ambito di progettazione software ? Options : [Seleziona un’opzione,Yes,No]
-  # conosci bene la lingua inglese ? Options : [Seleziona un’opzione,Yes,No]
-  # vivi nelle province bologna, forli/cesena, ravenna, rimini (o disponibile al trasferimento) ? Options : [Seleziona un’opzione,Yes,No]
-  # sei disponibile a lavorare in presenza ? Options : [Seleziona un’opzione,Yes,No]
-  # hai laurea in informatica o ingegneria informatica o percorso education affine ? Options : [Seleziona un’opzione,Yes,No]
-  # hai esperienza in c# oppure c / c++ ? Options : [Seleziona un’opzione,Yes,No]
+  # hai esperienza di 1/2 anni in ambito di progettazione software ? Options : [Seleziona un'opzione,Yes,No]
+  # conosci bene la lingua inglese ? Options : [Seleziona un'opzione,Yes,No]
+  # vivi nelle province bologna, forli/cesena, ravenna, rimini (o disponibile al trasferimento) ? Options : [Seleziona un'opzione,Yes,No]
+  # sei disponibile a lavorare in presenza ? Options : [Seleziona un'opzione,Yes,No]
+  # hai laurea in informatica o ingegneria informatica o percorso education affine ? Options : [Seleziona un'opzione,Yes,No]
+  # hai esperienza in c# oppure c / c++ ? Options : [Seleziona un'opzione,Yes,No]
   # what is your level of proficiency in polish? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
   # will you be physically located in poland at all times while providing services? Options : [Select an option,Yes,No]
   # do you live in the capital area of copenhagen? Options : [Select an option,Yes,No]
-  # hai esperienza con postgresql? Options : [Seleziona un’opzione,Yes,No]
-  # hai esperienza con la gestione di server linux? Options : [Seleziona un’opzione,Yes,No]
+  # hai esperienza con postgresql? Options : [Seleziona un'opzione,Yes,No]
+  # hai esperienza con la gestione di server linux? Options : [Seleziona un'opzione,Yes,No]
   # do you have good backend experience ? Options : [Select an option,Yes,No]
   # do you have at least 8+ years of experience  Options : [Select an option,Yes,No]
   # are you able to give coding test ? Options : [Select an option,Yes,No]
@@ -639,11 +646,11 @@ dropdown:
   # bringst du eine ausbildung oder studium im it bzw. technischen bereich und erste erfahrungen bei der betreuung oder dem aufbau von data warehouses oder data-lakes mit? Options : [Option auswählen,Yes,No]
   # permiso de trabajo en españa Options : [Select an option,Yes,No]
   # what is your level of proficiency in swedish? Options : [Select an option,None,Conversational,Professional,Native or bilingual]
-  # risiedi in provincia di udine? Options : [Seleziona un’opzione,Yes,No]
+  # risiedi in provincia di udine? Options : [Seleziona un'opzione,Yes,No]
   # will you now or in the future require visa sponsorship from manta? Options : [Select an option,Yes,No]
   sponsor: "Yes"
   # är du bekväm med att arbeta inom försvarsindustrin?  Options : [Select an option,Yes,No]
-  # phone country code Options : [Select an option,Poland (+48),Afghanistan (+93),Aland Islands (+358),Albania (+355),Algeria (+213),American Samoa (+1),Andorra (+376),Angola (+244),Anguilla (+1),Antarctica (+0),Antigua and Barbuda (+1),Argentina (+54),Armenia (+374),Aruba (+297),Australia (+61),Austria (+43),Azerbaijan (+994),Bahamas (+1),Bahrain (+973),Bangladesh (+880),Barbados (+1),Belarus (+375),Belgium (+32),Belize (+501),Benin (+229),Bermuda (+1),Bhutan (+975),Bolivia (+591),Bosnia and Herzegovina (+387),Botswana (+267),Bouvet Island (+0),Brazil (+55),British Indian Ocean Territory (+246),Brunei Darussalam (+673),Bulgaria (+359),Burkina Faso (+226),Burundi (+257),Cambodia (+855),Cameroon (+237),Canada (+1),Cape Verde (+238),Caribbean Nations (+0),Cayman Islands (+1),Central African Republic (+236),Chad (+235),Chile (+56),China (+86),Christmas Island (+61),Cocos (Keeling) Islands (+61),Colombia (+57),Comoros (+269),Congo (+242),Cook Islands (+682),Costa Rica (+506),Cote D’Ivoire (Ivory Coast) (+225),Croatia (+385),Cuba (+53),Cyprus (+357),Czech Republic (+420),Democratic Republic of the Congo (+243),Denmark (+45),Djibouti (+253),Dominica (+1),Dominican Republic (+1),Ecuador (+593),Egypt (+20),El Salvador (+503),Equatorial Guinea (+240),Eritrea (+291),Estonia (+372),Ethiopia (+251),Falkland Islands (Malvinas) (+500),Faroe Islands (+298),Federated States of Micronesia (+691),Fiji (+679),Finland (+358),France (+33),French Guiana (+594),French Polynesia (+689),French Southern Territories (+0),Gabon (+241),Gambia (+220),Georgia (+995),Germany (+49),Ghana (+233),Gibraltar (+350),Greece (+30),Greenland (+299),Grenada (+1),Guadeloupe (+590),Guam (+1),Guatemala (+502),Guernsey (+44),Guinea (+224),Guinea-Bissau (+245),Guyana (+592),Haiti (+509),Heard Island and McDonald Islands (+0),Honduras (+504),Hong Kong (+852),Hungary (+36),Iceland (+354),India (+91),Indonesia (+62),Iran (+98),Iraq (+964),Ireland (+353),Isle of Man (+44),Israel (+972),Italy (+39),Jamaica (+1),Japan (+81),Jersey (+44),Jordan (+962),Kazakhstan (+7),Kenya (+254),Kiribati (+686),Korea (+82),Korea (North) (+850),Kosovo (+383),Kuwait (+965),Kyrgyzstan (+996),Laos (+856),Latvia (+371),Lebanon (+961),Lesotho (+266),Liberia (+231),Libya (+218),Liechtenstein (+423),Lithuania (+370),Luxembourg (+352),Macao (+853),Macedonia (+389),Madagascar (+261),Malawi (+265),Malaysia (+60),Maldives (+960),Mali (+223),Malta (+356),Marshall Islands (+692),Martinique (+596),Mauritania (+222),Mauritius (+230),Mayotte (+262),Mexico (+52),Moldova (+373),Monaco (+377),Mongolia (+976),Montenegro (+382),Montserrat (+1),Morocco (+212),Mozambique (+258),Myanmar (+95),Namibia (+264),Nauru (+674),Nepal (+977),Netherlands (+31),Netherlands Antilles (+0),New Caledonia (+687),New Zealand (+64),Nicaragua (+505),Niger (+227),Nigeria (+234),Niue (+683),Norfolk Island (+672),Northern Mariana Islands (+1),Norway (+47),Pakistan (+92),Palau (+680),Palestinian Territory (+970),Panama (+507),Papua New Guinea (+675),Paraguay (+595),Peru (+51),Philippines (+63),Pitcairn (+0),Portugal (+351),Puerto Rico (+1),Qatar (+974),Reunion (+262),Romania (+40),Russian Federation (+7),Rwanda (+250),S. Georgia and S. Sandwich Islands (+0),Saint Helena (+290),Saint Kitts and Nevis (+1),Saint Lucia (+1),Saint Pierre and Miquelon (+508),Saint Vincent and the Grenadines (+1),Samoa (+685),San Marino (+378),Sao Tome and Principe (+239),Saudi Arabia (+966),Senegal (+221),Serbia (+381),Serbia and Montenegro (+0),Seychelles (+248),Sierra Leone (+232),Singapore (+65),Slovak Republic (+421),Slovenia (+386),Solomon Islands (+677),Somalia (+252),South Africa (+27),South Sudan (+211),Spain (+34),Sri Lanka (+94),Sudan (+249),Sultanate of Oman (+968),Suriname (+597),Svalbard and Jan Mayen (+47),Swaziland (+268),Sweden (+46),Switzerland (+41),Syria (+963),Taiwan (+886),Tajikistan (+992),Tanzania (+255),Thailand (+66),Timor-Leste (+670),Togo (+228),Tokelau (+690),Tonga (+676),Trinidad and Tobago (+1),Tunisia (+216),Turkey (+90),Turkmenistan (+993),Turks and Caicos Islands (+1),Tuvalu (+688),Uganda (+256),Ukraine (+380),United Arab Emirates (+971),United Kingdom (+44),United States (+1),Uruguay (+598),Uzbekistan (+998),Vanuatu (+678),Vatican City State (Holy See) (+39),Venezuela (+58),Vietnam (+84),Virgin Islands (British) (+1),Virgin Islands (U.S.) (+1),Wallis and Futuna (+681),Western Sahara (+212),Yemen (+967),Zambia (+260),Zimbabwe (+263)]
+  # phone country code Options : [Select an option,Poland (+48),Afghanistan (+93),Aland Islands (+358),Albania (+355),Algeria (+213),American Samoa (+1),Andorra (+376),Angola (+244),Anguilla (+1),Antarctica (+0),Antigua and Barbuda (+1),Argentina (+54),Armenia (+374),Aruba (+297),Australia (+61),Austria (+43),Azerbaijan (+994),Bahamas (+1),Bahrain (+973),Bangladesh (+880),Barbados (+1),Belarus (+375),Belgium (+32),Belize (+501),Benin (+229),Bermuda (+1),Bhutan (+975),Bolivia (+591),Bosnia and Herzegovina (+387),Botswana (+267),Bouvet Island (+0),Brazil (+55),British Indian Ocean Territory (+246),Brunei Darussalam (+673),Bulgaria (+359),Burkina Faso (+226),Burundi (+257),Cambodia (+855),Cameroon (+237),Canada (+1),Cape Verde (+238),Caribbean Nations (+0),Cayman Islands (+1),Central African Republic (+236),Chad (+235),Chile (+56),China (+86),Christmas Island (+61),Cocos (Keeling) Islands (+61),Colombia (+57),Comoros (+269),Congo (+242),Cook Islands (+682),Costa Rica (+506),Cote D'Ivoire (Ivory Coast) (+225),Croatia (+385),Cuba (+53),Cyprus (+357),Czech Republic (+420),Democratic Republic of the Congo (+243),Denmark (+45),Djibouti (+253),Dominica (+1),Dominican Republic (+1),Ecuador (+593),Egypt (+20),El Salvador (+503),Equatorial Guinea (+240),Eritrea (+291),Estonia (+372),Ethiopia (+251),Falkland Islands (Malvinas) (+500),Faroe Islands (+298),Federated States of Micronesia (+691),Fiji (+679),Finland (+358),France (+33),French Guiana (+594),French Polynesia (+689),French Southern Territories (+0),Gabon (+241),Gambia (+220),Georgia (+995),Germany (+49),Ghana (+233),Gibraltar (+350),Greece (+30),Greenland (+299),Grenada (+1),Guadeloupe (+590),Guam (+1),Guatemala (+502),Guernsey (+44),Guinea (+224),Guinea-Bissau (+245),Guyana (+592),Haiti (+509),Heard Island and McDonald Islands (+0),Honduras (+504),Hong Kong (+852),Hungary (+36),Iceland (+354),India (+91),Indonesia (+62),Iran (+98),Iraq (+964),Ireland (+353),Isle of Man (+44),Israel (+972),Italy (+39),Jamaica (+1),Japan (+81),Jersey (+44),Jordan (+962),Kazakhstan (+7),Kenya (+254),Kiribati (+686),Korea (+82),Korea (North) (+850),Kosovo (+383),Kuwait (+965),Kyrgyzstan (+996),Laos (+856),Latvia (+371),Lebanon (+961),Lesotho (+266),Liberia (+231),Libya (+218),Liechtenstein (+423),Lithuania (+370),Luxembourg (+352),Macao (+853),Macedonia (+389),Madagascar (+261),Malawi (+265),Malaysia (+60),Maldives (+960),Mali (+223),Malta (+356),Marshall Islands (+692),Martinique (+596),Mauritania (+222),Mauritius (+230),Mayotte (+262),Mexico (+52),Moldova (+373),Monaco (+377),Mongolia (+976),Montenegro (+382),Montserrat (+1),Morocco (+212),Mozambique (+258),Myanmar (+95),Namibia (+264),Nauru (+674),Nepal (+977),Netherlands (+31),Netherlands Antilles (+0),New Caledonia (+687),New Zealand (+64),Nicaragua (+505),Niger (+227),Nigeria (+234),Niue (+683),Norfolk Island (+672),Northern Mariana Islands (+1),Norway (+47),Pakistan (+92),Palau (+680),Palestinian Territory (+970),Panama (+507),Papua New Guinea (+675),Paraguay (+595),Peru (+51),Philippines (+63),Pitcairn (+0),Portugal (+351),Puerto Rico (+1),Qatar (+974),Reunion (+262),Romania (+40),Russian Federation (+7),Rwanda (+250),S. Georgia and S. Sandwich Islands (+0),Saint Helena (+290),Saint Kitts and Nevis (+1),Saint Lucia (+1),Saint Pierre and Miquelon (+508),Saint Vincent and the Grenadines (+1),Samoa (+685),San Marino (+378),Sao Tome and Principe (+239),Saudi Arabia (+966),Senegal (+221),Serbia (+381),Serbia and Montenegro (+0),Seychelles (+248),Sierra Leone (+232),Singapore (+65),Slovak Republic (+421),Slovenia (+386),Solomon Islands (+677),Somalia (+252),South Africa (+27),South Sudan (+211),Spain (+34),Sri Lanka (+94),Sudan (+249),Sultanate of Oman (+968),Suriname (+597),Svalbard and Jan Mayen (+47),Swaziland (+268),Sweden (+46),Switzerland (+41),Syria (+963),Taiwan (+886),Tajikistan (+992),Tanzania (+255),Thailand (+66),Timor-Leste (+670),Togo (+228),Tokelau (+690),Tonga (+676),Trinidad and Tobago (+1),Tunisia (+216),Turkey (+90),Turkmenistan (+993),Turks and Caicos Islands (+1),Tuvalu (+688),Uganda (+256),Ukraine (+380),United Arab Emirates (+971),United Kingdom (+44),United States (+1),Uruguay (+598),Uzbekistan (+998),Vanuatu (+678),Vatican City State (Holy See) (+39),Venezuela (+58),Vietnam (+84),Virgin Islands (British) (+1),Virgin Islands (U.S.) (+1),Wallis and Futuna (+681),Western Sahara (+212),Yemen (+967),Zambia (+260),Zimbabwe (+263)]
   # ¿tienes interés en la simulación aeronáutica? Options : [Selecciona una opción,Yes,No]
   # have you ever used a hootsuite product? Options : [Select an option,Yes,No]
   # are you legally eligible to work in the location you are applying for (romania)? Options : [Select an option,Yes,No]
@@ -666,6 +673,8 @@ dropdown:
   # czy posiadasz znajomość zagadnień integracji międzysystemowej? Options : [Wybierz opcję,Yes,No]
   # are you currently living in gdansk (or ready to work in hybrid model from there)?  Options : [Select an option,Yes,No]
   ready to work in hybrid model : "yes"
+  Gender: "Man"
+  Gender: "Male"
   # candidate has eu passport? Options : [Select an option,Yes,No]
   eu passport: "no"
   # are you ux/ui developer with minimum 3 years of experience? Options : [Select an option,Yes,No]
@@ -693,3 +702,7 @@ dropdown:
   # do you have experience of dlt / blockchain architecture?  Options : [Select an option,Yes,No]
   # do you have a post study visa/tier 4 visa, or tier 2 general visa? Options : [Select an option,Yes,No]
   # do you have enhanced dv clearance? Options : [Select an option,Yes,No]
+  "Do you live within a 30 mile radius of London": "Yes"
+  "Do you live within a 30 mile radius of London?": "Yes"
+  "Do you live within 30 miles of London": "Yes"
+  "Do you live within 30 miles of London?": "Yes"
